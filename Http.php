@@ -4,13 +4,13 @@ class Http
 {
     /**
      * @purpose 获取请求数据
-     * @param string $date 时间（格式：Y-m-d）
+     * @param string $uri 请求参数
      * @return mixed|void
      */
-    public function send(string $date)
+    public function send(string $uri)
     {
         $random = mt_rand() / mt_getrandmax();
-        $data = self::request("http://www.szse.cn/api/report/ShowReport/data?SHOWTYPE=JSON&CATALOGID=SGT_SGTJYRB&txtDate=$date&random=$random");
+        $data = self::request("http://www.szse.cn/api/report/ShowReport/data?SHOWTYPE=JSON&CATALOGID=SGT_SGTJYRB&" . $uri ."&random=$random" );
         if ($data['code'] !== 200) {
             exit("获取数据失败，请重试！");
         }
