@@ -15,4 +15,4 @@ php .\main.php // Windows
 
 ## 3. 结果
 
-![](C:\Users\IT\Desktop\crawler\data.png)
+![](crawler/data.png)
