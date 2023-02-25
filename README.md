@@ -15,4 +15,4 @@ php .\main.php // Windows
 
 ## 3. 结果
 
-![](crawler/data.png)
+![](https://github.com/herman-hang/crawler/raw/main/data.png)
